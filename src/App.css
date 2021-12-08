@@ -37,9 +37,16 @@
   }
 }
 
+.billetera {
+  width:40px !important;
+}
 
 #logo {
   width: 18%;
   height: 100%;
 }
 
+#billetera {
+  width: 40px;
+  height: 40px;
+}

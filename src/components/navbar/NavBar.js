@@ -1,8 +1,9 @@
-import logo from '../logo.svg';
+import logo from '../../assets/images/logo.svg';
 import React, {Component, Fragment} from 'react';
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import NavBar from 'react-bootstrap/NavBar';
+import CartComponent from './CartWidget';
 
 
 function NavBarComponent () {
@@ -24,8 +25,10 @@ function NavBarComponent () {
                 <Nav.Link href="#jobs">Trabaja con nosotros</Nav.Link>
               </Nav.Item>
             </Nav>
+            <CartComponent></CartComponent>
       </Container>
 </NavBar>
+
   )
 }
 
