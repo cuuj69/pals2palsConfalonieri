@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
 import NavBarComponent from './components/navbar/NavBar';
-import ItemListComponent from './components/ItemListContrainer';
+import ItemListComponent from './components/List/ItemListContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

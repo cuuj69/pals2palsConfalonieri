@@ -1,16 +1,16 @@
-import '../../src/App.css'
+import "../../App.css"
 import React, {Component, Fragment} from 'react';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { getRoles } from '@testing-library/react';
+import ItemCountComponent from "./ItemCount";
 
 
 
 function ItemListComponent (props) {
   const {greeting: value} = props
   return (
-    <p>{props.greeting}</p>
+    <ItemCountComponent></ItemCountComponent>
   )
 }
 
