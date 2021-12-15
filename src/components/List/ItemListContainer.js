@@ -3,15 +3,21 @@ import React, {Component, Fragment} from 'react';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import ItemCountComponent from "./ItemCount";
+import ItemListComponent from "./ItemList";
 
 
 
-function ItemListComponent (props) {
+
+function ItemContainerComponent (props) {
   const {greeting: value} = props
   return (
-    <ItemCountComponent></ItemCountComponent>
+    <div>
+
+    <ItemListComponent></ItemListComponent>
+    <h1>{props.greeting}</h1>
+    </div>
+
   )
 }
 
-export default ItemListComponent
+export default ItemContainerComponent
