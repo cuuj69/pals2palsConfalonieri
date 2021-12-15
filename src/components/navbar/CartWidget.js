@@ -1,14 +1,18 @@
 import '../../App.css';
-import React, {Component, Fragment} from 'react';
+import React, { Component, Fragment } from 'react';
 import Container from "react-bootstrap/Container";
-import billetera from '../../assets/images/wallet.svg'
+import cart from '../../assets/images/cart.svg'
 
-function CartComponent () {
-  return (
-    <Container className="billetera">
-      <img src={billetera} alt="billetera" id="billetera" />
-    </Container>
-  )
+function CartComponent() {
+    return ( <
+        Container className = "carrito" >
+        <
+        img src = { cart }
+        alt = "carrito"
+        id = "carrito" / >
+        <
+        /Container>
+    )
 }
 
 export default CartComponent;

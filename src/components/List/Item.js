@@ -2,25 +2,19 @@ import '../../App.css';
 import React, { Component, Container, useState } from "react";
 import ItemCountComponent from "./ItemCount";
 
-function ItemComponent() {
+function ItemComponent(props) {
+    const [{ title: nombre }, { price: precio }, { pictureUrl: foto }, { description: detalle }] = props;
 
-const productos = [];
-const promProd = new Promise((resolve, reject) => {
-  resolve(true)
-});
-promProd.then(res => {
-  setTimeout(() => {
-    console.log("holi")
-  })
-});
+    return ( <
+        div > < img href = { props.foto } > <
+        /img> <
+        h3 > { props.nombre } < /h3> <
+        p > { props.precio } < /p> <
+        button > Detalle < /button><
+        ItemCountComponent > </ItemCountComponent> 
+        </div>
 
-  return (
-  <div>
-
-  <ItemCountComponent></ItemCountComponent>
-  </div>
-
-  )
+    )
 }
 
 export default ItemComponent;
