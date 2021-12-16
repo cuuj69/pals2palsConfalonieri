@@ -38,7 +38,7 @@
 }
 
 button {
-    background-color: rgb(79, 184, 184);
+    background-color: rgb(154, 209, 209);
     width: 3rem;
     font-size: 20px !important;
 }
@@ -50,7 +50,33 @@ button {
 .contador {
     display: flex;
     flex-direction: row;
+    justify-content:center;
 }
+
+.productoTitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.productoPrecio {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.btnDetalle {
+    width: 100% !important;
+    background-color: rgb(138, 184, 138);
+}
+
+.card {
+    display: flex;
+    row-gap: 4rem;
+    padding: 50px;
+    width: 40%;
+}
+
 
 #logo {
     width: 18%;

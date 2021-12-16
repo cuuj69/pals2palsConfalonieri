@@ -7,15 +7,12 @@ import ItemListComponent from "./ItemList";
 
 
 function ItemContainerComponent(props) {
-    const { greeting: value } = props
-    return ( <
-        div >
+    return (
+    <div>
+        <ItemListComponent>
 
-        <
-        ItemListComponent > < /ItemListComponent> <
-        h1 > { props.greeting } < /h1> < /
-        div >
-
+        </ItemListComponent>
+    </div>
     )
 }
 

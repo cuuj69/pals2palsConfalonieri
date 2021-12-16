@@ -5,10 +5,7 @@ import React, { Component, Container, useState } from "react";
 
 function ItemCountComponent() {
     const producto = {
-        nombre: "DAI",
-        precio: 204,
         stock: 5,
-        vendedor: "usuarioRandom"
     }
 
     const [comprado, setComprado] = useState(1);
@@ -36,15 +33,12 @@ function ItemCountComponent() {
     };
 
 
-    return ( <
-        div className = "contador" >
-        <
-        button onClick = { onSubtract }
-        disabled = { resta } > - < /button> <
-        h3 id = "contador" > { comprado } < /h3> <
-        button onClick = { onAdd }
-        disabled = { suma } > + < /button> < /
-        div >
+    return (
+    <div className = "contador" >
+    <button onClick = { onSubtract } disabled = { resta } > - </button>
+    <h3 id = "contador"> { comprado } </h3>
+    <button onClick = { onAdd } disabled = { suma }> + </button>
+    </div>
     )
 };
 

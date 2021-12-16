@@ -6,12 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-    return ( <
-        React.Fragment className = "App" >
-        <
-        NavBarComponent > < /NavBarComponent> <
-        ItemContainerComponent greeting = "Hola Coder" > < /ItemContainerComponent> < /
-        React.Fragment >
+    return ( 
+        <React.Fragment className="main">
+            <NavBarComponent />  
+            <ItemContainerComponent/> 
+        </React.Fragment>
     );
 }
 

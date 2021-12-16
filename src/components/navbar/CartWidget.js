@@ -4,14 +4,10 @@ import Container from "react-bootstrap/Container";
 import cart from '../../assets/images/cart.svg'
 
 function CartComponent() {
-    return ( <
-        Container className = "carrito" >
-        <
-        img src = { cart }
-        alt = "carrito"
-        id = "carrito" / >
-        <
-        /Container>
+    return ( 
+        <Container className="carrito" >
+            <img src = { cart } alt = "carrito" id = "carrito" />
+        </Container>
     )
 }
 
