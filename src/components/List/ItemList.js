@@ -1,6 +1,7 @@
 import '../../App.css';
 import React, { useState } from "react";
 import ItemComponent from "./Item";
+import DetailContainerComponent from "./ItemDetailContainer";
 
 function ItemListComponent(props) {
     const [products, setProducts] = useState([{ id: 1, title: "Cafe Dark Roast", description: "Cafe dark roast marca Starbucks", price: 606, pictureUrl: "https://images.lider.cl/wmtcl?source=url[file:/productos/1030096a.jpg]&sink" },
@@ -18,11 +19,18 @@ function ItemListComponent(props) {
     setTimeoutAsync();
     
     return (
-        <div className="card">
+        <div className="mainList">
             {   
             timer ?
                 products.map((item) => {
-                    return (<ItemComponent product={item} key={item.id} />)
+                    return (
+                        <>
+                        <div className="item">
+                        <DetailContainerComponent product={item} key={item.id}></DetailContainerComponent>
+                        <ItemComponent product={item} key={item.id} />
+                        </div>
+                        </>
+                        )
                 }) : null
             }
         </div>

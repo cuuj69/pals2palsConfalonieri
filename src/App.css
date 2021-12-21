@@ -54,33 +54,49 @@ button {
 }
 
 .productoTitulo {
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.productoDetalle {
+    font-size: 0.8em;
     display: flex;
     flex-direction: row;
     justify-content:center;
 }
 
 .productoPrecio {
+    font-size: 1.3em;
     display: flex;
     flex-direction: row;
     justify-content:center;
 }
 
-.btnDetalle {
-    width: 100% !important;
-    background-color: rgb(138, 184, 138);
-}
-
-.card {
+.mainList {
     display: flex;
     row-gap: 4rem;
+    column-gap: 4rem;
     padding: 50px;
-    width: 40%;
+    width: 20%;
 }
 
+.productoImagen {
+    width: 80%;
+    height: auto;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
 #logo {
-    width: 18%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 #carrito {
